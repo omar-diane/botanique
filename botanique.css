@@ -1,0 +1,302 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    margin: 0 auto;
+}
+
+section.top-page {
+    background-image: url('image/botanical/background.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+.onglets {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 30px;
+}
+
+.onglets a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+
+header li:hover .sub-menu {
+    display: block;
+}
+
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+.landing-page {
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size: 80px;
+    padding: 20px 50px;
+}
+
+.description {
+    font-size: 24px;
+    color: red;
+}
+
+.menu-accueil {
+    box-shadow: 0 15px 50px green;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* labotanique */
+
+
+#bodylabotanique {
+    margin: 0 auto;
+}
+
+.main h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+section.main img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main p {
+    margin-left: 20px;
+    margin-right: 20px;
+    background: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px;
+}
+ 
+ footer {
+        margin-top: 10px;
+        background-color: green;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px;
+}
+
+/* plantesbotanique */
+
+#bodyplantesbotanique {
+    margin: 100px;
+}
+
+.the-plants {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: burlywood;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px; 
+}
+
+.the-plants h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.the-plants img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.the-plants p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.types-plants p {
+    margin-left: 20px;
+}
+
+.types-plants .plants-types h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.types-plants .plants-types p {
+    display: flex;
+    justify-content: center;
+}
+
+.types-plants .plants-types img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* legumes */
+
+.vegetable h2 {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.vegetable img {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vegetable {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: burlywood;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px orange;
+}
+
+.vegetable p {
+    margin-left: 20px;
+}
+
+.vegetable h3 {
+    margin-left: 20px;
+    color: red;
+}
+
+.vegetable ul {
+    margin-left: 20px;
+}
+
+/*arbustes*/
+
+.main-arbuste {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: yellowgreen;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px red;
+}
+
+.main-arbuste h2 {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-arbuste img {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main-arbuste p {
+    margin-left: 20px;
+}
+
+/* fleurs */
+
+.main-fleur {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: pink;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px pink;
+}
+
+.main-fleur h1 {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-fleur img {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-fleur p {
+    margin-left: 20px;
+}
+
+.main-fleur2 h3 {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-fleur2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px pink;
+}
+
+.main-fleur2 p {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
