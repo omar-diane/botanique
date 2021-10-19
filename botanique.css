@@ -133,7 +133,7 @@ header li a {
 
 footer {
     margin-top: 10px;
-    background-color: var(--forestgreen);
+    background-color: var(--magicmint);
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -141,14 +141,38 @@ footer {
     padding: 30px;
 }
 
-/* labotanique */
+
+
+
+
+/* presentation */
 
 
 #bodylabotanique {
     margin: 0 auto;
 }
 
-.main h2 {
+.mainpres table {
+    color: whitesmoke;
+    table-layout: fixed;
+    padding: 15px;
+    box-shadow: var(--generalshad) ;
+    border-radius: 15px;
+    background-color: var(--junglegreen);
+    padding: 10px;
+    width: 90%;
+}
+
+.mainpres table td img {
+    width: 90%;
+}
+
+.mainpres table td  {
+    width: 60%;
+}
+
+
+.mainpres h2 {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -156,76 +180,50 @@ footer {
 }
 
 
-.main p {
-    margin-left: 20px;
-    margin-right: 20px;
-    background: whitesmoke;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 15px 50px;
+.mainpres p {
+    color: whitesmoke;
+    padding: 15px;
+    box-shadow: var(--generalshad) ;
+    border-radius: 15px;
+    background-color: var(--junglegreen);
+    padding: 10px;
 }
  
-footer {
-        background-color: var(--magicmint);
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 30px;
-}
 
-/* plantesbotanique */
 
-#bodyplantesbotanique {
-    margin: 100px;
-}
+
+
+/* plantes */
+
 
 .the-plants {
     margin-left: 20px;
     margin-right: 20px;
-    background-color: burlywood;
+    background-color: #5CAB7D;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px; 
+    box-shadow:  0 6px 20px rgba(0, 0, 0, 0.19) ; 
+    padding: 45px;
+    color: whitesmoke;
 }
 
-.the-plants h2 {
+.plants-types {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    color: white;
+    width: 80%;
+    text-align: center;
 }
 
-.the-plants img {
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.plants-types img {
+    width: 70%;
 }
 
-.the-plants p {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
-.types-plants p {
-    margin-left: 20px;
-}
 
-.types-plants .plants-types h2 {
-    display: flex;
-    justify-content: center;
-}
 
-.types-plants .plants-types p {
-    display: flex;
-    justify-content: center;
-}
 
-.types-plants .plants-types img {
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* legumes */
 
@@ -270,6 +268,9 @@ footer {
     border: solid 0.5px whitesmoke;
 
 }
+
+
+
 
 /*arbustes*/
 
@@ -336,8 +337,6 @@ footer {
 .main-fleur table {
     padding:  15px;
 }
-
-
 
 .main-fleur2 h3 {
     margin-left: 20px;
