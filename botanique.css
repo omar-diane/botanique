@@ -1,41 +1,34 @@
+:root {
+    --junglegreen: #091E05;
+    --magicmint: #56E39F;
+    --forestgreen: #1E3F20;
+    --generalshad: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    --textshad: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    --textshadwhite: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05); 
+}
+
 * {
-    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* a {
+    text-decoration: none;
 }
 
 body {
     margin: 0 auto;
+    background-color: var(--junglegreen);
 }
 
-section.top-page {
-    background-image: url('image/botanical/background.jpg');
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
-}
 
-header.header {
+header {
     display: flex;
     align-items: center;
-}
-
-.onglets {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 500px;
-    margin-left: 30px;
-}
-
-.onglets a {
-    font-size: 1.2em;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.sub-menu {
-    display: none;
-    position: absolute;
+    background-color: var(--junglegreen);
 }
 
 header li:hover .sub-menu {
@@ -53,33 +46,94 @@ header li a {
     text-decoration: none;
 }
 
-.landing-page {
-    padding: 20px 50px;
+.onglets {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 30px;
+
 }
+
+.onglets a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;;
+}
+
+.onglets a:hover {
+    padding: 5px;
+    border: solid whitesmoke 1px;
+    box-shadow: var(--generalshad) ;
+    border-radius: 15px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+
+
+.landing-page {
+    background-image: url('pics/background.jpg');
+    padding: 20px 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .big-title {
     color: white;
     font-size: 80px;
-    padding: 20px 50px;
+    font-weight: 900;
+    padding: 20px ;
+    border: solid whitesmoke 0.5px;
+    box-shadow: var(--generalshad) ;
+    border-radius: 15px;
+    text-shadow: var(--textshad);
 }
 
 .description {
-    font-size: 24px;
-    color: red;
+    font-size: 17px;
+    color: whitesmoke;
+    width: 80%;
+    padding: 15px;
+    box-shadow: var(--generalshad) ;
+    border-radius: 15px;
+    background-color: var(--junglegreen);
 }
 
+
 .menu-accueil {
-    box-shadow: 0 15px 50px green;
-    border-radius: 10px;
+    box-shadow: 0 15px 50px var(--magicmint);
+    border-radius: 25px;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin-top: 20px ;
+    padding: 20px;
+    box-shadow: var(--generalshad);
+}
+
+.menu-accueil a {
+    text-decoration: none;
+    width: 50%;
+    margin-top: 20px ;
+    font-size: 17px;
+    color: whitesmoke;
+    border:  solid whitesmoke 0.5px;
+    padding: 4px;
+    box-shadow: var(--generalshad);
 }
 
 footer {
     margin-top: 10px;
-    background-color: green;
+    background-color: var(--forestgreen);
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -98,14 +152,9 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 25px;
+    padding: 10px;
 }
 
-section.main img {
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .main p {
     margin-left: 20px;
@@ -116,9 +165,8 @@ section.main img {
     box-shadow: 0 15px 50px;
 }
  
- footer {
-        margin-top: 10px;
-        background-color: green;
+footer {
+        background-color: var(--magicmint);
         color: white;
         display: flex;
         flex-wrap: wrap;
@@ -181,98 +229,115 @@ section.main img {
 
 /* legumes */
 
-.vegetable h2 {
+.vegetable {
     margin-left: 20px;
-    display: flex;
-    justify-content: center;
+    margin-right: 20px;
+    background-color: #5CAB7D;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: var(--generalshad);
+    color:  whitesmoke;
+    padding: 25px;
 }
 
 .vegetable img {
     width: 400px;
     display: flex;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.vegetable {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: burlywood;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 15px 50px orange;
-}
-
-.vegetable p {
-    margin-left: 20px;
-}
-
 .vegetable h3 {
-    margin-left: 20px;
-    color: red;
+    text-shadow: var(--textshad);
+
+}
+
+.vegetable h2 {
+    display: flex;
+    justify-content: center;
+    text-shadow: var(--textshad);
 }
 
 .vegetable ul {
-    margin-left: 20px;
+}
+
+#veglink {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: var(--generalshad);
+    color: whitesmoke;
+    border: solid 0.5px whitesmoke;
+
 }
 
 /*arbustes*/
 
-.main-arbuste {
+.main-arbuste { 
     margin-left: 20px;
     margin-right: 20px;
-    background-color: yellowgreen;
+    background-color: var(--junglegreen);
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px red;
+    padding: 5px;
+    box-shadow: var(--generalshad);
+    color: whitesmoke;
 }
 
-.main-arbuste h2 {
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
+#maintable {
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
 }
 
 .main-arbuste img {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 74%;
+    margin-left: 50px;
 }
 
-.main-arbuste p {
-    margin-left: 20px;
+.main-arbuste td p {
+    padding: 5px;
+    margin-right: 50px;
+
+
 }
+
+.main-arbuste td h2 {
+    text-align: center;
+
+}
+
+#imgdesc {
+    margin-left: 50px;
+}
+
 
 /* fleurs */
 
 .main-fleur {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: pink;
+    width: 80%;
+    background-color: D87CAC;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px pink;
+    box-shadow: var(--generalshad);
+    background-color: #D87CAC ;
+    color: whitesmoke;
+    padding: 5px;
 }
 
 .main-fleur h1 {
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .main-fleur img {
     width: 400px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.main-fleur p {
-    margin-left: 20px;
+.main-fleur table {
+    padding:  15px;
 }
+
+
 
 .main-fleur2 h3 {
     margin-left: 20px;
@@ -281,18 +346,15 @@ section.main img {
 }
 
 .main-fleur2 {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: white;
+    width: 80%;
+    background-color: var(--junglegreen);
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px pink;
+    box-shadow:var(--generalshad);
+    margin-top: 10px;
+    padding: 30px;
+    color: whitesmoke;
 }
-
-.main-fleur2 p {
-    margin-left: 20px;
-}
-
 
 
 
